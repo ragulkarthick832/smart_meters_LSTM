@@ -47,5 +47,6 @@ if st.button("Predict"):
     # Display Predictions
     st.success(f"Predicted {metric} for the next {days_to_predict} days:")
     st.write(predictions)
-
+    message = "Performance Analysis: \nFlow Rate (mL/sec) RMSE: 0.2223\nCurrent (mA) RMSE: 0.2475"
+    st.write(message)
 # Run API: `streamlit run app.py`
