@@ -45,8 +45,6 @@ if st.button("Predict"):
     predictions = scaler.inverse_transform(np.array(predictions).reshape(-1, 1)).flatten()
 
     # Display Predictions
-    st.success(f"Predicted {metric} for the next {days_to_predict} days:")
+    st.success(f"Predicted {metric} for the next {days_to_predict} days:\nPerformance Analysis: \nFlow Rate (mL/sec) RMSE: 0.2223\nCurrent (mA) RMSE: 0.2475")
     st.write(predictions)
-    message = "Performance Analysis: \nFlow Rate (mL/sec) RMSE: 0.2223\nCurrent (mA) RMSE: 0.2475"
-    st.write(message)
 # Run API: `streamlit run app.py`
